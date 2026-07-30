@@ -1,1 +1,49 @@
-<h1>us cities search gemini</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US Cities Search</title>
+    <!-- Linking external CSS for clean separation of concerns -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>US Cities Search</h1>
+            <p class="subtitle">Search for cities by name or zip code</p>
+        </header>
+
+        <main>
+            <!-- 
+                Search UI Section
+                Architectural Choice: Wrapping input and suggestions in a relative container 
+                to facilitate absolute positioning of the dropdown.
+            -->
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="search-input" 
+                    placeholder="e.g., Cincinnati or 45202" 
+                    autocomplete="off"
+                    aria-label="Search for US cities by name or zip code"
+                >
+                <button id="search-button">Search</button>
+            </div>
+
+            <!-- 
+                Results Display Area
+                Choice: Using an ID for easy targetting by JavaScript. 
+                Initial state is empty.
+            -->
+            <div id="results"></div>
+        </main>
+    </div>
+
+    <!-- 
+        Application Logic
+        Choice: Loading script at the end of body to ensure DOM elements are available.
+    -->
+    <script src="app.js"></script>
+</body>
+</html>
