@@ -47,9 +47,6 @@ User has the ability to search for US cities by zip code or name, and retrieve a
  - [x] AC-09: When the user enters keystrokes rapidly, the results are updated after a brief delay (debounced) to ensure performance and reduce API load.
  - [x] AC-10: Inputs from frontend service are sanitized / validated by backend service before being used to query database
 
-### Sequence Diagram
-![](https://www.plantuml.com/plantuml/png/XLD1Rjj03Bph5Vn0Fj134UXWe4MH7WhVSc4anbvanTsIb0trzQMjnSeBj_4UoU7CS4Gzgw7OFCKE1qi2UoK1LDXtsUjX21dPO2U9ZNYyT7PDfyVXepJwhjl3qzDNsC4NUAD3O0YSP-jsr-hUgrdIAOm4Gvfo92FG-N0WjP1ONzcEQ32X3SSokD7fHKFezqpgV5iPELZuGojUEum6vsCmqem3GUAuT02R_ak2mGT8uJtDpaWYIJgAIeK1mkGUCqbS729kncXiABxn2MCOL_mj0PETatoifMQawJHgdsZrFbWMXXZK8BqNxmxf2-G-0G2CLhSeEOA_leOMoWQ5lHg-jHpOI1WZACc9f6Akvk-vgnrdb0L6D7n3Hvw37JTdnLkHho0XpOcL7D4QVOHyRBSOVY3ONjdtNpzV04LmsIA_lqrjFFZmAe9sHzzyZxRdhpsj_stH1j-I50cQiYshxrf_VFe0D_JEEqShW7-I_6WE4IwXlFAQogmazGzz9XxdAVu5)
-
 ### Plantuml code
 ```plantuml
 @startuml
@@ -90,8 +87,6 @@ else inputs properly formatted
           F --> U : List of cities that\nmatch user request
 @enduml
 ```
-
-
 ## Building and Running
 
 - **Local Development:**

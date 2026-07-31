@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>US Cities Search</title>
-    <!-- Linking external CSS for clean separation of concerns -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <header>
             <h1>US Cities Search</h1>
-            <p class="subtitle">Search for cities by name or zip code</p>
+            <p class="subtitle">Search for cities by name or ZIP code...</p>
         </header>
 
         <main>
@@ -24,7 +23,7 @@
                 <input 
                     type="text" 
                     id="search-input" 
-                    placeholder="e.g., Cincinnati or 45202" 
+                    placeholder="Begin typing city name or zip code" 
                     autocomplete="off"
                     aria-label="Search for US cities by name or zip code"
                 >
@@ -40,10 +39,6 @@
         </main>
     </div>
 
-    <!-- 
-        Application Logic
-        Choice: Loading script at the end of body to ensure DOM elements are available.
-    -->
     <script src="app.js"></script>
 </body>
 </html>
